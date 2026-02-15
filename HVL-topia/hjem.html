@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVL topia hjem</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="logo">
+        <a href="hjem.html" tabindex="1">
+          <img src="bilder/HVLlogo.png" alt="hvl sin logo">
+        </a>
+      </div>
+
+      <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="hjem.html" tabindex="2">Hjem</a>
+        <a href="omProsjekt.html" tabindex="3">Om prosjekt</a>
+        
+        <!-- Dropdown for Løsninger -->
+        <div class="dropdown">
+            <a href="Losning.html" class="dropbtn" tabindex="4">Løsninger</a>
+            <div class="dropdown-content">
+                <a href="transportløsninger.html">Transportløsninger</a>
+                <a href="energisparendeTeknologier.html">Energisparende Teknologier</a>
+                <a href="foredrag.html">Informasjonskampanjer</a>
+                <a href="sensorsystem.html">Sensorsystem</a>
+            </div>
+        </div>
+    
+        <a href="KontaktSamarbeid.html" tabindex="5">Kontakt og samarbeid</a>
+        <a href="foredrag.html" tabindex="6">Informasjonskampanjer</a>
+        <a href="omOss.html" tabindex="7">Om oss</a>
+      </nav>
+
+    </header>
+
+    <section class="home" id="hjem">
+
+      <div class="content">
+        <h3>Velkommen til HVLtopia</h3>
+        <p>‘HVLtopia’ – et fremtidsrettet og bærekraftig Bergen, er et
+          prosjekt og en plan til å bidra til en byutvikling som
+          kombinerer effektivt bærekraft, tilgjengelighet og
+          teknologisk innovasjon.
+          Vi ønsker å inspirere til endringen som folk ønsker å se og
+          vi vil inkludere samfunnet i jakten på vår Utopia.
+          Vi trenger deg, til å ta kontroll, til å ta grep og være en
+          del av endringen du ønsker å se. Nettsiden vår og all
+          informasjonen er et kart du kan følge for å bidra til å
+          forbedre byen vår; sammen.
+        </p>
+
+        <a href="omProsjekt.html" class="btn" tabindex="8">Les mer</a>
+      </div>        
+      <!-- <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                Hvilket av utsagnene passer ditt problem best, skriv 1, 2 eller 3<br>
+                1. Jeg har et spørsmål om prosjektet<br>
+                2. Jeg har et spørsmål om nettsiden<br> 
+                3. Annet
+            </div>
+        </div>
+        <input type="text" id="user-input" tabindex="0" class="user-input" placeholder="Skriv inn det chat-boten sier">
+        <button id="send-btn" tabindex="0">Send</button>
+      </div>
+    
+      <button class="knapp" tabindex="9">ChatBot</button> -->
+
+    </section>
+
+    <div class="chat-bot-popup" id="bot-popup-form">
+      <div class="header-bot-popup"
+        <button class="minimize-btn" onclick="minimizeChat()">x</button>
+      </div>
+      <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+          <div class="message bot-message">
+            Hvilket av utsagnene passer ditt problem best, skriv 1, 2 eller 3<br>
+            1. Jeg har et spørsmål om prosjektet<br>
+            2. Jeg har et spørsmål om nettsiden<br> 
+            3. Annet
+          </div>
+        </div>
+        <input type="text" id="user-input" tabindex="0" class="user-input" placeholder="Skriv inn det chat-boten sier">
+        <button id="send-btn" tabindex="0">Send</button>
+      </div>
+    </div>
+
+    <button class="open-chat-btn" id="openChatBtn" onclick="openChat()">
+      <div class="chat-btn-wrapper">
+        <span style ="font-size: 20px; padding: 10px 20px;">Chat</span>
+        <img src="bilder/HVLlogoBilde.png" alt="open-chat-logo" style="width: 50px; height: 50px; object-fit: contain;">
+      </div>
+    </button>
+      
+    
+<div class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Om oss</h3>
+        <p>Vi er en gruppe engasjerte individer ved Høgskulen på Vestlandet som jobber for å fremme bærekraftige løsninger og innovative prosjekter. 
+          Teamet vårt består av eksperter innen teknologi, miljø og samfunnsvitenskap, 
+          og vi ønsker å skape en positiv innvirkning på samfunnet.</p>
+        </div>
+
+      <div class="box">
+          <h3>Les mer</h3>
+          <a href="https://www.bergen.kommune.no/" tabindex="10">Bergen Kommune</a>
+          <a href="https://www.hvl.no/" tabindex="11">Høyskolen På Vestlandet</a>
+          <a href="https://fn.no/om-fn/fns-baerekraftsmaal/stoppe-klimaendringene" tabindex="12">Les mer om  klimaendringene</a>
+      </div>
+
+      <div class="box">
+          <h3>Kontakt oss</h3>
+          <p> <i class="fas fa-phone"></i> +47 123 32 112 </p>
+          <p> <i class="fas fa-envelope"></i> hvltopia@hvltopia.no </p>
+          <p><i class="fas fa-map-marker-alt"></i>HVLtopia har kontor på Høgskulen på Vestlandet. Adressen er: </p>
+              <p><a href="https://www.google.com/maps?q=Inndalsveien+28,+5063" target="_blank" tabindex="13">Inndalsveien 28, 5063</a> </p>
+                  </div>
+
+      <div class="box">
+          <h3>Følg oss</h3>
+          <a href="https://www.facebook.com/hvl.no" tabindex="14">Facebook</a>
+          <a href="#" tabindex="15">Twitter</a>
+          <a href="https://www.instagram.com/hvl.no/" tabindex="16">Instagram</a>
+      </div>
+
+  </div>
+
+</div>
+  
+<script src="script.js"></script>
+
+</body>
+</html>
+
